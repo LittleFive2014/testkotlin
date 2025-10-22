@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.135.128:5432/auth_system
+    username: postgres
+    password: kawasaki
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  thymeleaf:
+    cache: false
+    mode: HTML
+    encoding: UTF-8
+    prefix: classpath:/templates/
+
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 30m
+
+logging:
+  level:
+    org.springframework.security: INFO
+    com.example.auth: DEBUG
+

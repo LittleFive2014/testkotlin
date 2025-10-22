@@ -1,0 +1,44 @@
+/* Custom styles for the auth system */
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    border-color: #80bdff;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    padding: 0.75rem;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.alert {
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.footer {
+    margin-top: auto;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
